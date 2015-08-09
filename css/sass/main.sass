@@ -1,0 +1,227 @@
+@import "bourbon/bourbon"
+
+$text-color: #333
+$dark-color: #000
+$red-color: #9B1818
+$blue-color: #003469
+$green-color: #67bc5c
+
+
+body 
+	font-family: "RobotoRegular", sans-serif
+	font-size: 16px
+	min-width: 320px
+	position: relative
+
+.hidden
+	display: none
+
+// .carousel img 
+// 	width: 100%
+// 	height: auto
+
+// .parallax 
+// 	background-attachment: fixed
+// 	background-position: 50% 0
+// 	position: relative
+
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+
+header 
+	background-image: url(../img/top_bg.jpg)
+	background-repeat: repeat-x
+	background-position: top center
+	min-height: 644px
+	position: relative
+	font-family: "BebasBold"
+	padding-bottom: 40px
+
+header a 
+	color: #fff
+
+.top_line 
+	min-height: 97px
+	-webkit-box-shadow: rgba(255,255,255,.2) 0 0 0 1px
+	box-shadow: rgba(255,255,255,.2) 0 0 0 1px
+	width: 100%
+	background-color: rgba(0,0,0,.6)
+	padding: 22px 0
+
+.top_line a 
+	font-size: 21px
+	border-bottom: #fff dashed 1px
+	-webkit-transition: all .25s
+	-o-transition: all .25s
+	transition: all .25s
+
+.top_line a:hover 
+	border-bottom: transparent 1px dashed
+
+.top_addr 
+    padding-left: 50px
+    background-image: url(../img/top_map.png)
+    background-repeat: no-repeat
+    background-position: left top
+    line-height: 26px
+
+.top_addr strong 
+    display: block
+    color: #d12f22
+    font-weight: normal
+    text-transform: uppercase
+    font-size: 32px
+
+.top_line .logo 
+	border-bottom: none
+	position: absolute
+	margin-top: -25px
+
+.top_line .logo:hover 
+	border-bottom: none
+
+.logo_wrap 
+	position: relative
+	width: 210px
+	margin: auto
+
+.ta_right 
+	background-image: none
+	padding-left: 0
+	text-align: right
+
+.ta_right  span 
+	color: #fff
+
+header h1 
+	text-align: center
+	color: #fff
+	margin-top: 68px
+	font-size: 40px
+	text-shadow: 0 3px rgba(0,0,0,.55)
+	font-family: "BebasRegular"
+
+
+//tabs акции и скидки и новости
+.tabs_header .wrapper .active 
+	text-decoration: underline
+
+.tab_item
+	display: none
+	font-size: 15px//размер шрифта в tab_content
+.tab_item:first-child 
+	display: block
+
+
+.tabs_header 
+	// margin-top: 70px
+	margin: 70px 25px
+	ul, li 
+		// list-style-type: none
+		margin: 0
+		padding: 0
+	li 
+		// padding-left: 20px
+		position: relative
+		margin-bottom: 8px //отсуп между строками списка
+	.tabs
+		.tab
+			display: inline-block
+			background-color: rgba(0,0,0,.45)	
+			color: #E3E3E3
+			font-size: 23px
+			padding: 12px 18px
+			text-transform: uppercase
+			cursor: pointer //рука при наведении
+			float: left
+			font-family: "BebasBold", sans-serif
+			+transition(all 1.0s ease)//замедление в переключ между табами
+			&.active
+				background-color: rgba(0,0,0,.65)	
+				color: #d12f22
+	.tab_content
+		background-color: rgba(0,0,0,.65)
+		padding: 12px 18px 16px
+		font-family: "RobotoRegular", sans-serif
+		color: #C0C0C0
+		// text-transform: uppercase
+
+
+
+
+
+
+//кнопка (общие св-ва)
+.button
+	border: none
+	cursor: pointer
+	display: inline-block
+	height: 46px
+	line-height: 46px
+	padding: 0 32px//cверху отступ 0, по бокам - 32
+	background-color: #000
+	text-transform: uppercase
+	text-align: center
+	color: #fff
+	border-radius: 3px
+	font-size: 14px
+	font-family: "RobotoBold", sans-serif
+	&.btn_red
+		background-color: $red-color
+	&.btn_green
+		background-color: $green-color
+	&.btn_white
+		background-color: #fff
+		color: #000
+
+.botton_wrap
+	text-align: right
+
+a.button 
+	color: #fff
+	text-decoration: none
+
+
+
+
+
+// .s_tizer 
+// 	height: 80px
+// 	-webkit-box-shadow: rgba(255,255,255,.3) 0 0 0 1px
+// 	box-shadow: rgba(255,255,255,.3) 0 0 0 1px
+// 	+linear-gradient(#242424, #5E5E5E)
+// 	font-family: "BebasRegular"
+// 	text-transform: uppercase
+
+// .s_tizer ul 
+// 	margin: 0
+// 	padding: 0
+// 	list-style-type: none //убирает значки списка у списка
+// 	color: #fff //цвет
+// 	font-size: 23px //размер
+// .s_tizer li
+// 	// display: inline-block//чтобы список был в одну строку
+// 	float: left
+// 	// display: block
+// 	padding: 0 26px 0 65px//сверху 0, а по бокам - 26
+// 	line-height: 70px
+// 	// border-left: #fff 1px solid//вертикальные полоски
+// 	background-image: url(../img/transport131.png)
+// 	background-repeat: no-repeat
+// 	background-position: 20px 15px
+
+// .s_tizer li:nth-child(2)
+// 	background-image: url(../img/vehicle92.png)
+
+// .s_tizer li:nth-child(3)
+// 	background-image: url(../img/vehicle92.png)
+
+// .s_tizer li:nth-child(4)
+// 	background-image: url(../img/vehicle92.png)

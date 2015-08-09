@@ -1,0 +1,203 @@
+body {
+  font-family: "RobotoRegular", sans-serif;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green;
+}
+
+header {
+  background-image: url(../img/top_bg.jpg);
+  background-repeat: repeat-x;
+  background-position: top center;
+  max-height: 644px;
+  position: relative;
+  font-family: "BebasBold";
+  padding-bottom: 40px;
+}
+
+header a {
+  color: #fff;
+}
+
+.top_line {
+  min-height: 97px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 0 0 1px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0 0 0 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 22px 0;
+}
+
+.top_line a {
+  font-size: 21px;
+  border-bottom: #fff dashed 1px;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.top_line a:hover {
+  border-bottom: transparent 1px dashed;
+}
+
+.top_addr {
+  padding-left: 50px;
+  background-image: url(../img/top_map.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  line-height: 26px;
+}
+
+.top_addr strong {
+  display: block;
+  color: #d12f22;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.top_line .logo {
+  border-bottom: none;
+  position: absolute;
+  margin-top: -25px;
+}
+
+.top_line .logo:hover {
+  border-bottom: none;
+}
+
+.logo_wrap {
+  position: relative;
+  width: 210px;
+  margin: auto;
+}
+
+.ta_right {
+  background-image: none;
+  padding-left: 0;
+  text-align: right;
+}
+
+.ta_right span {
+  color: #fff;
+}
+
+header h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 68px;
+  font-size: 40px;
+  text-shadow: 0 3px rgba(0, 0, 0, 0.55);
+  font-family: "BebasRegular";
+}
+
+.tabs_header .wrapper .active {
+  text-decoration: underline;
+}
+
+.tab_item {
+  display: none;
+  font-size: 15px;
+}
+
+.tab_item:first-child {
+  display: block;
+}
+
+.tabs_header {
+  margin: 70px 25px;
+}
+
+.tabs_header ul, .tabs_header li {
+  margin: 0;
+  padding: 0;
+}
+
+.tabs_header li {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.tabs_header .tabs .tab {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.45);
+  color: #E3E3E3;
+  font-size: 23px;
+  padding: 12px 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  float: left;
+  font-family: "BebasBold", sans-serif;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.tabs_header .tabs .tab.active {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #d12f22;
+}
+
+.tabs_header .tab_content {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 12px 18px 16px;
+  font-family: "RobotoRegular", sans-serif;
+  color: #C0C0C0;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 32px;
+  background-color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: "RobotoBold", sans-serif;
+}
+
+.button.btn_red {
+  background-color: #9B1818;
+}
+
+.button.btn_green {
+  background-color: #67bc5c;
+}
+
+.button.btn_white {
+  background-color: #fff;
+  color: #000;
+}
+
+.botton_wrap {
+  text-align: right;
+}
+
+a.button {
+  color: #fff;
+  text-decoration: none;
+}
+
+.s_tizer {
+  height: 62px;
+  background-color: #242424;
+}
