@@ -7,7 +7,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.s_tizer {
+		height: 500px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -40,7 +42,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	
 }
 
 /* Medium Devices, Desktops */

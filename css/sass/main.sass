@@ -189,8 +189,113 @@ a.button
 	text-decoration: none
 
 
+.s_tizer
+	height: 100px
+	+linear-gradient(#242424, #5E5E5E)
+	color: #fff
+	font-family: "CleanvertisingLight"
+	text-transform: uppercase
+	padding: 0 0 0 130px//выравниваем на глаз по центру экрана
+	// text-align: center
+
+	span 
+		font-size: 19px
+		display: block
+	strong
+		font-size: 25px
+		font-weight: normal
+		display: block
+
+.tiz_img,
+.tiz_descr
+	display: inline-block
+	// vertical-align: bottom //чтобы все выравнивались по низу
+
+.tiz_img i
+	font-size: 60px
+	line-height: 90px
+	margin-right: 0px //отступ между картинкой и текстом
+	color: #d12f22
+
+.s_tizer .row 
+	> div:nth-child(1)
+		i
+			margin-right: 0px//расстояние между 1-ой картинкой и текстом
+		span 
+			font-size: 19px
+		strong 
+			font-size: 25px
+			line-height: 20px//Межстрочный интервал между верхней и нижней строкой
+
+	> div:nth-child(2)
+		i
+			line-height: 95px//регулировка по высоте все конструкции в этой темной полоске
+			position: relative// регулировка по 
+			bottom: 0px//высоте самого значка!!!!
+
+		span 
+			font-size: 19px
+		strong 
+			font-size: 25px
+			line-height: 20px//Межстрочный интервал между верхней и нижней строкой
+
+	> div:nth-child(3)
+		i
+			line-height: 95px//регулировка по высоте все конструкции в этой темной полоске
+			position: relative// регулировка по 
+			bottom: -5px//высоте самого значка!!!!
+
+		span 
+			font-size: 19px
+		strong 
+			font-size: 25px
+			line-height: 20px//Межстрочный интервал между верхней и нижней строкой
+
+	> div:nth-child(4)
+		i
+			line-height: 95px//регулировка по высоте все конструкции в этой темной полоске
+			position: relative// регулировка по 
+			bottom: -8px//высоте самого значка!!!!
+
+		span 
+			font-size: 19px
+		strong 
+			font-size: 25px
+			line-height: 20px//Межстрочный интервал между верхней и нижней строкой
 
 
+
+
+section 
+	h2 
+		// color: #000
+		font-family: "CleanvertisingLight", sans-serif
+		font-size: 50px
+		line-height: 56px
+		margin-bottom: 50px
+		margin-top: 40px
+		text-align: center
+		font-weight: normal //толщину шрифта немного меньше делает
+	
+	p strong
+		font-family: "RobotoBold", sans-serif
+		font-weight: normal
+
+// padding - "Красное ПОЛЕ" или же ПОЛЕ отступа для ТЕКСТА(Только ТЕКСТА).
+// margin - ОТСТУП от родительского объекта, применимо только для блочных элементов типа div
+
+.profi_left
+	/* Обтекание по правому краю */
+	float: left//Определяет, по какой стороне будет выравниваться элемент, при этом остальные элементы будут обтекать его с других сторон.
+	margin-right: 20px//Устанавливает величину отступа от правого края элемента. 
+	i
+		font-size: 100px//размер icons
+		line-height: 100px//регулировка по высоте icons
+
+.profi_right
+	h3 
+		display: inline-block
+		margin: 0
 
 // .s_tizer 
 // 	height: 80px
