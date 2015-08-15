@@ -473,3 +473,53 @@ form .button_wrap {
 .owl-dots .owl-dot.active {
   opacity: .8;
 }
+
+.s_back {
+  background-image: url(../img/red_bg.jpg);
+  background-position: top center;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.s_back h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 26px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.13);
+  padding: 20px 0;
+  color: #FFF;
+}
+
+.s_back .button {
+  margin: auto;
+}
+
+.s_contacts {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.s_contacts h2 {
+  display: inline-block;
+  margin-bottom: -30px;
+}
+
+.contacts_center {
+  text-align: center;
+}
+
+.contacts_center h2 {
+  margin-top: 0px;
+  font-size: 22px;
+  font-family: "RobotoBold", sans-serif;
+  font-weight: normal;
+  color: #d12f22;
+}
+
+.map {
+  margin-top: 20px;
+  min-height: 480px;
+  background-color: #E1D6B0;
+}
