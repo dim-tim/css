@@ -8,13 +8,15 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	.s_tizer {
-		height: 500px;
+		height: 200px;
 	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+.s_tizer {
+		height: 400px;
+	}
 }
 
 /* Extra Small Devices, Phones */
