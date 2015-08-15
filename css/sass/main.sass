@@ -12,6 +12,7 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
+	overflow-x: hidden //чтобы анимация не мешала скроллу
 
 .hidden
 	display: none
@@ -66,6 +67,9 @@ header a
 
 .top_line a:hover 
 	border-bottom: transparent 1px dashed
+	color: #fff
+.top_line a:visited
+	color: #fff
 
 .top_addr 
     padding-left: 50px
@@ -267,7 +271,8 @@ a.button
 
 
 
-section 
+section, footer 
+	// padding: 28px 0 68px
 	h2 
 		// color: #000
 		font-family: "CleanvertisingLight", sans-serif
@@ -445,6 +450,7 @@ form
 
 
 .s_contacts
+	padding: 48px 0 68px
 	text-align: center
 	padding-bottom: 0
 	h2 
@@ -462,6 +468,36 @@ form
 	margin-top: 20px
 	min-height: 480px
 	background-color: #E1D6B0 
+
+
+
+footer
+	padding: 48px 0 68px
+	h2
+		color: #000
+		text-align: center
+		padding-bottom: 0
+		margin-bottom: 30px
+	p 
+		font-size: 18px
+		text-align: center
+	.top_phone
+		text-align: center
+		color: #d12f22 
+		font-size: 44px;
+		font-family: "RobotoBold", sans-serif;
+	.button_wrap
+		text-align: center
+		margin-top: 20px
+
+
+#hidden_form
+	max-width: 420px
+	margin: auto
+	position: relative//чтобы крестик закрытия окна не уехал
+	h2 
+		text-align: center
+		font-weight: normal
 
 // .s_tizer 
 // 	height: 80px

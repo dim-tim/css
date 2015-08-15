@@ -4,6 +4,7 @@ body {
   font-size: 16px;
   min-width: 320px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .hidden {
@@ -55,6 +56,11 @@ header a {
 
 .top_line a:hover {
   border-bottom: transparent 1px dashed;
+  color: #fff;
+}
+
+.top_line a:visited {
+  color: #fff;
 }
 
 .top_addr {
@@ -292,7 +298,7 @@ a.button {
   line-height: 20px;
 }
 
-section h2 {
+section h2, footer h2 {
   font-family: "CleanvertisingLight", sans-serif;
   font-size: 50px;
   line-height: 56px;
@@ -302,7 +308,7 @@ section h2 {
   font-weight: normal;
 }
 
-section p strong {
+section p strong, footer p strong {
   font-family: "RobotoBold", sans-serif;
   font-weight: normal;
 }
@@ -497,6 +503,7 @@ form .button_wrap {
 }
 
 .s_contacts {
+  padding: 48px 0 68px;
   text-align: center;
   padding-bottom: 0;
 }
@@ -522,4 +529,43 @@ form .button_wrap {
   margin-top: 20px;
   min-height: 480px;
   background-color: #E1D6B0;
+}
+
+footer {
+  padding: 48px 0 68px;
+}
+
+footer h2 {
+  color: #000;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 30px;
+}
+
+footer p {
+  font-size: 18px;
+  text-align: center;
+}
+
+footer .top_phone {
+  text-align: center;
+  color: #d12f22;
+  font-size: 44px;
+  font-family: "RobotoBold", sans-serif;
+}
+
+footer .button_wrap {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#hidden_form {
+  max-width: 420px;
+  margin: auto;
+  position: relative;
+}
+
+#hidden_form h2 {
+  text-align: center;
+  font-weight: normal;
 }

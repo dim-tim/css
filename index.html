@@ -12,9 +12,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.2.min.css" />
-	<link rel="stylesheet" href="libs/myFonts2/stylesheet.css" />
+	<link rel="stylesheet" href="libs/myFonts2/stylesheet.css"/>
 	<link rel="stylesheet" href="libs/owl/assets/owl.carousel.css" />
 	<link rel="stylesheet" href="libs/magnific/magnific-popup.css" />
+	<link rel="stylesheet" href="libs/animate/animate.min.css"/>
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css" />
@@ -43,7 +44,7 @@
 	  				<div class="col-md-4">
 	  					<div class="top_addr ta_right">
 	  						<strong>+375 (29) <span>750-22-13</span></strong>
-	  						<a class="fancybox" href="#callback">Заказать обратный звонок</a>
+	  						<a class="fancybox popup_c" href="#hidden_form">Заказать обратный звонок</a>
 	  					</div>
 	  				</div>
 	  			</div>
@@ -61,7 +62,7 @@
 	  					<div class="wrapper">
 					    <div class="tabs clearfix">
 					        <span class="tab">Наши новости</span>
-					        <span class="tab">Скидки и акции</span>        
+					        <span class="tab">Скидки и акции</span> 
 					    </div>
 					    <div class="tab_content">
 					        <div class="tab_item">
@@ -76,7 +77,7 @@
 					        	</ul>
 					        </div>
 					        <div class="botton_wrap">
-					        	<a href="#" class="button btn_red">Получить скидку</a>
+					        	<a href="#hidden_form" class="button btn_red popup_c">Получить скидку</a>
 					        </div>
 					    </div>
 					</div>
@@ -276,7 +277,7 @@
 					<h3>
 						У нас Вы найдете полный перечень основных деталей двигателя, подвески, коробки, кузова, сцепления и других узлов автомобиля.
 					</h3>
-					<a href="#" class="button btn_white">Связаться с нами</a>
+					<a href="#hidden_form" class="button btn_white popup_c">Связаться с нами</a>
 				</div>
 			</div>
 		</div>
@@ -296,7 +297,50 @@
 	</section>
 
 
-	<div class="hidden"></div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Остались вопросы?</h2>
+					<p>Наш специалист ответит на любой вопрос</p>
+					<div class="top_phone">
+						+375 (29) 750-22-13
+					</div>
+					<div class="button_wrap">
+						<a href="#hidden_form" class="button btn_red popup_c">Заказать звонок</a>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div class="hidden">
+		<form id="hidden_form">
+			<h2>Связаться с нами</h2>
+				<label>
+					<span>Ваше имя:</span>
+					<input type="text" name="name" required />
+				</label>
+				<label>
+					<span>Ваш телефон:</span>
+					<input type="text" name="phone" required />
+				</label>
+				<label>
+					<span>Когда Вам перезвонить:</span>
+					<select name="time">
+						<option>До обеда</option>
+						<option>После обеда</option>
+						<option>Лучше вечером</option>
+					</select>
+				</label>
+				<div class="button_wrap">
+					<button class="button btn_green">
+						Отправить заявку
+					</button>
+				</div>
+		</form>
+	</div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -310,6 +354,8 @@
 	<script src="libs/stellar/jquery.stellar.min.js"></script>
 	<script src="libs/owl/owl.carousel.min.js"></script>
 	<script src="libs/magnific/jquery.magnific-popup.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
 	<script src="js/common.js"></script>
 
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->

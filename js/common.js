@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-	 $(".popup").magnificPopup({type:"image"});
+	$(".popup").magnificPopup({type:"image"});
+
+	$(".popup_c").magnificPopup();
 
 	$.stellar({
 		responsive: true,
@@ -52,7 +54,8 @@ $(".wrapper .tab").click(function() {
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("#form").submit(function(e) {
+	$("form").submit(function(e) {
+		var ths = $(this);
 		e.preventDefault;
 		$.ajax({
 			type: "POST",
@@ -61,9 +64,24 @@ $(".wrapper .tab").click(function() {
 		}).done(function() {
 			alert("Спасибо за заявку!");
 			setTimeout(function() {
-				$.fancybox.close();
+				var magnificPopup = $.magnificPopup.instance;
+				magnificPopup,close();
+				ths.trigger("reset");
 			}, 1000);
 		});
+		return false;
 	});
 	
+});
+
+$(window).load(function() {
+	$(".top_header h1").animated("fadeInDown", "fadeOut");
+	$(".tabs_header .wrapper").animated("flipInY", "fadeOut");
+	$(".profi_item").animated("fadeInRight", "fadeOut");
+	$(".s_profi form").animated("lightSpeedIn", "fadeOut");
+
+	$(".s_back h3").animated("fadeInUp", "fadeOut");
+	$(".s_review h2").animated("fadeInUp", "fadeOut");
+	$(".s_contacts h2").animated("fadeInUp", "fadeOut");
+	$("footer h2, .contacts_top .tabs").animated("fadeInUp", "fadeOut");
 });
