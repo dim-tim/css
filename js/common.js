@@ -74,14 +74,21 @@ $(".wrapper .tab").click(function() {
 	
 });
 
-$(window).on('load', function () {
-    var $preloader = $('#page-preloader'),
-        $spinner   = $preloader.find('.spinner');
-    $spinner.fadeOut();
-    $preloader.delay(350).fadeOut('slow');
-});
+// $(window).on('load', function () {
+//     var $preloader = $('#page-preloader'),
+//         $spinner   = $preloader.find('.spinner');
+//     $spinner.fadeOut();
+//     $preloader.delay(350).fadeOut('slow');
+// });
+
+
 
 $(window).load(function() {
+
+	$(".loader_inner").fadeOut();
+	$(".loader").delay(400).fadeOut("slow");
+
+	
 	$(".top_header h1").animated("fadeInDown", "fadeOut");
 	$(".tabs_header .wrapper").animated("flipInY", "fadeOut");
 	$(".profi_item").animated("fadeInRight", "fadeOut");
