@@ -21,7 +21,11 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+.profi_item {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 25px;
+	}
 }
 
 /* Custom, iPhone Retina */
