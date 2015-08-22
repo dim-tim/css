@@ -98,4 +98,5 @@ $(window).load(function() {
 	$(".s_review h2").animated("fadeInUp", "fadeOut");
 	$(".s_contacts h2").animated("fadeInUp", "fadeOut");
 	$("footer h2, .contacts_top .tabs").animated("fadeInUp", "fadeOut");
+	$("footer h3").animated("lightSpeedIn", "fadeOut");
 });

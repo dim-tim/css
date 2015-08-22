@@ -444,10 +444,21 @@ form .button_wrap {
 }
 
 .review_item p {
-  margin: 30px auto 0;
+  margin: 10px auto 0;
+  font-family: "RobotoBold", serif;
   display: inline-block;
   float: none;
-  font-size: 15px;
+  font-size: 20px;
+}
+
+.review_item h3 {
+  font-family: "RobotoBold", serif;
+  font-style: italic;
+  font-size: 22px;
+  color: #d12f22;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .review_item .image_wrap {
@@ -489,7 +500,7 @@ form .button_wrap {
 
 .owl-dots {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 0px;
   text-align: center;
 }
 
@@ -566,7 +577,16 @@ footer h2 {
   color: #000;
   text-align: center;
   padding-bottom: 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+footer h3 {
+  text-align: center;
+  font-size: 15px;
+}
+
+footer h3 strong {
+  color: #d12f22;
 }
 
 footer p {
